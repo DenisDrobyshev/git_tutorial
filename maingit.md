@@ -1013,11 +1013,33 @@ v1.0-dev-3-g387f83f
     editor = nano -ixO -r72
 [format]
      pretty = Commit: %h%d%nAuthor: %an <%ae> %nDate:   %ad%C(reset)%n%n%w(72,2,2)%s%n%n%w(0,2,2)%-b%n
-
 [user]
     name = <Firstname> <Surname>
     email = <username@email.com>
     signingkey = <key>
 [push]
     default = simple
+```
+
+## Замена автора коммита
+```
+#!/bin/sh
+
+git filter-branch --env-filter '
+
+OLD_EMAIL="username@examole.com"
+CORRECT_NAME="Andrey Rodionov"
+CORRECT_EMAIL="roand@inbox.ru"
+
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
 ```
