@@ -1004,3 +1004,21 @@ v1.0-dev-3-g387f83f
    * 3 — количество коммитов после этого тега (0 если тэг поставлен на текущий коммит)
    * 387f83f — короткий хэш текущего коммита.
    
+## Файл настройки .gitconfig
+```
+[core]
+    quotepath = false
+    pager = less -r
+    abbrev = 8
+    editor = nano -ixO -r72
+[format]
+#    pretty = Commit: %h%d%nAuthor: %an <%ae> %nDate:   %ad%C(reset)%n%n%w(72,2,2)%s%n%n%w(72,2,2)%-b%n
+     pretty = Commit: %h%d%nAuthor: %an <%ae> %nDate:   %ad%C(reset)%n%n%w(72,2,2)%s%n%n%w(0,2,2)%-b%n
+
+[user]
+    name = <Firstname> <Surname>
+    email = <username@email.com>
+    signingkey = <key>
+[push]
+    default = simple
+```
