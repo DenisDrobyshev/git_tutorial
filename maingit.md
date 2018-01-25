@@ -1,5 +1,17 @@
 
-- [Введение](#--------)
+* Table of Contents                                                     :TOC:
+- [[#about][About]]
+- [[#installation][Installation]]
+  - [[#via-packageel][via package.el]]
+  - [[#manual][Manual]]
+- [[#use][Use]]
+  - [[#follow-links][Follow links]]
+  - [[#exclude-headings][Exclude headings]]
+  - [[#shortcut-for-toc-tag][Shortcut for TOC tag]]
+- [[#different-href-styles][Different href styles]]
+- [[#example][Example]]
+
+- [Введение](#Введение)
 - [Основы работы с удаленным репозитарием](#--------------------------------------)
   * [git clone — создание копии (удаленного) репозитария](#git-clone------------------------------------------)
   * [git fetch и git pull — забираем изменения из центрального репозитария](#git-fetch---git-pull-------------------------------------------------)
