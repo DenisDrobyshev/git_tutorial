@@ -37,7 +37,7 @@ git clone git://user@somehost:port/~user/repository/project.git/
 ```
 git svn clone -s http://repo/location
 ```
--s – понимать стандартные папки SVN (trunk, branches, tags)
+где -s – понимать стандартные папки SVN (trunk, branches, tags)
 
 ## git fetch и git pull — забираем изменения из центрального репозитария
 
@@ -45,14 +45,16 @@ git svn clone -s http://repo/location
 
 git fetch — забрать изменения удаленной ветки из репозитария по умолчания, основной ветки; той, которая была использована при клонировании репозитария. Изменения обновят удаленную ветку (remote tracking branch), после чего надо будет провести слияние с локальной ветку командой git merge.
 
-git fetch /home/username/project — забрать изменения из определенного репозитария.
+Получение изменений из определенного репозитария:
+```
+git fetch /home/username/project — забрать 
+```
 
 Возможно также использовать синонимы для адресов, создаваемые командой git remote:
 ```
 git remote add username-project /home/username/project
+git fetch username-project
 ```
-
-git fetch username-project — забрать изменения по адресу, определяемому синонимом.
 
 Естественно, что после оценки изменений, например, командой git diff, надо создать коммит слияния с основной:
 ```
@@ -67,7 +69,6 @@ git pull
 ```
 
 Забрать изменения и метки из определенного репозитория:
-
 ```
 git pull username-project --tags
 ```
