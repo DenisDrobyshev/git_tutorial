@@ -1,3 +1,6 @@
+:toc: macro
+:toc-title:
+:toclevels: 99
 
 * Table of Contents                                                     :TOC:
 - [Введение](#Введение)
