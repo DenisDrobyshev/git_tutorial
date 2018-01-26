@@ -1020,19 +1020,19 @@ v1.0-dev-3-g387f83f
 [push]
     default = simple
 [color "branch"]
-    current = yellow bold
-    local = green bold
-    remote = cyan bold
+    current = 207 bold
+    local = 40 bold
+    remote = 203 bold
 [color "diff"]
-    meta = yellow bold
-    frag = magenta bold
-    old = red bold
-    new = green bold
-    whitespace = red reverse
+    meta = 207 bold
+    frag = 207 bold
+    old = 203 bold
+    new = 40 bold
+    whitespace = 40 reverse
 [color "status"]
-    added = green bold
-    changed = yellow bold
-    untracked = red bold
+    added = 40 bold
+    changed = 207 bold
+    untracked = 203 bold
 ```
 
 ## Замена автора коммита
