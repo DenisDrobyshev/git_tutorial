@@ -1,5 +1,5 @@
 # Основы работы с Git
-По материалам: https://www.calculate-linux.org/main/ru/git
+*По материалам сайта Calculate Linux: https://www.calculate-linux.org/main/ru/git*
 
 - [Введение](#Введение)
 - [Основы работы с удаленным репозитарием](#Основы-работы-с-удаленным-репозитарием)
