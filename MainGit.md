@@ -799,7 +799,7 @@ git submodule update --remote submodule_directory
 ```
 git submodule add https://github.com/jquery/jquery.git
 ```
-После этого должны добавить и зафиксировать новый файл .gitmodules. В нём описано 
+После этого необходимо добавить и зафиксировать новый файл .gitmodules. В нём описано 
 какие подмодули следует клонировать при запуске команды git submodule update
 
 ### Перемещение подмодулей
