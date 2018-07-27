@@ -761,7 +761,7 @@ git cherry-pick BUG_FIX_TAG -n
 ```
 $ git clone --recursive https://github.com/username/repo.git
 ```
-Запуск данный команды эквивалентен запуску команды:
+Запуск данной команды эквивалентен запуску команды:
 ```
 git submodule update --init --recursive
 ```
