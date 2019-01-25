@@ -1054,7 +1054,7 @@ local отслеживаемой с origin/local:
 git push -u origin local
 ```
 
-Пометка докальной ветки как отслеживаемой с origin/local:
+Пометка локальной ветки как отслеживаемой с origin/local:
 ```
 git branch --set-upstream-to=origin/local
 ```
