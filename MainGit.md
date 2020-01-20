@@ -588,6 +588,11 @@ git branch -m new-name-branch
 git branch --contains v1.2
 ```
 
+Показывает коммит ответвления ветки new-name-branch от ветки master:
+```
+git merge-base master new-name-branch
+```
+
 ### git checkout — переключение между ветками, извлечение файлов
 
 Команда git checkout позволяет переключаться между последними коммитами (если
