@@ -51,7 +51,7 @@ git clone http://user@somehost:port/~user/repository/project.git
 git clone /home/username/project myrepo
 ```
 
-Клонирует репозитарий, используя безопасный протокол ssh:
+Клонирует репозиторий, используя безопасный протокол ssh:
 ```
 git clone ssh://user@somehost:port/~user/repository
 ```
@@ -61,7 +61,7 @@ git clone ssh://user@somehost:port/~user/repository
 git clone git://user@somehost:port/~user/repository/project.git/
 ```
 
-Импортирует svn репозитарий, используя протокол http:
+Импортирует svn репозиторий, используя протокол http:
 ```
 git svn clone -s http://repo/location
 ```
