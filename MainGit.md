@@ -604,7 +604,7 @@ git merge-base master new-name-branch
 Команда git checkout позволяет переключаться между последними коммитами (если
 упрощенно) веток:
 ```
-checkout some-other-branch
+git checkout some-other-branch
 ```
 
 Создаёт ветку, в которую и произойдет переключение:
